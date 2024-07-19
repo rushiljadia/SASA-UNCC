@@ -1,0 +1,701 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 'Roboto Flex';
+}
+
+/* Header styles (Applies to all pages)*/
+header {
+  background-color: #E35C36;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+  
+header img {
+  margin-right: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: #892924;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #F7E0D1;
+}
+
+@media(max-width:1883px) {
+  .hamburger {
+      display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+      position: fixed;
+      left: 100%;
+      top: 120px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #F7E0D1;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+  }
+
+  .nav-header {
+      margin: 16px 0;
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+}
+
+/* End of header styles for all pages */
+
+/* Main content styles */
+main {
+  margin-top: 130px;
+  background-color: #E35C36;
+  /* background-image: url('images/SASA_Site_Back.png'); */
+}
+
+.home-title {
+  text-align: center;
+  /* font-family: 'Roboto Flex'; */
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 100px;
+  margin-right: 600px;
+  letter-spacing: .25rem;
+}
+
+.subtitle {
+  /* font-family: 'Roboto Flex'; */
+  font-size: 20px;
+  font-weight: normal;
+  color: #FFF;
+  text-align: center;
+  margin-top: -85px;
+  margin-left: -200px;
+  letter-spacing: .1em;
+}
+
+.home-logo {
+  float: right;
+  margin-right: 275px;
+  margin-top: -40px;
+}
+
+.main-member-block
+{
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  padding: 80px;
+  background-color: #892924;
+  margin-top: 350px;
+}
+
+.main-member-block h2 {
+  color: #FFF;
+  /* font-family: 'Roboto Flex'; */
+  font-size: xx-large;
+  letter-spacing: .11rem;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.main-member-block a {
+  text-align: center;
+  /* font-family: 'Roboto Flex'; */
+  font-size: x-large;
+  font-weight: 800;
+  color: black;
+  letter-spacing: .11rem;
+  margin-top: 20px;
+  margin-left: 430px;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #EB856A;
+  width: 400px;
+  height: 85px;
+  line-height: 65px;
+}
+
+.description p{
+  font-family: 'Roboto Flex';
+  color: #fff;
+  text-shadow: #000;
+  text-align: 2px 2px 4px #000;
+  position: relative;
+  left: 900px;
+  width: 400px;
+}
+
+.purpose-logo {
+  margin-top: 500px;
+  position: relative;
+  left: 900px;
+  top: 120px;
+}
+
+.about-sasa {
+  letter-spacing: .5rem;
+}
+
+.about-p {
+  color: #F7E0D1;
+  font-weight: 500;
+  font-size: x-large;
+  margin-left: 130px;
+  margin-bottom: 7px;
+}
+
+.shadow {
+  font-family: 'Roboto Flex';
+  font-size: 4rem;
+  font-weight:900;
+  color: #F7E0D1;
+  text-shadow: rgb(103, 53, 39) -5px 1px;
+  margin-left: 200px;
+}
+
+/* Footer styles*/
+footer {
+  position: flex;
+  bottom: 0;
+  width: 100%;
+  background-color: #892924;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+
+/* Video styles */
+.intro {
+  text-align: center;
+  margin-bottom: 50px;
+  height: 100;
+  width: 100;
+}
+
+video {
+  display: flex;
+  margin: auto;
+  /* border: 3px solid #E35C36;  */
+  max-width: 200%; 
+  height: auto;
+  margin-left: 700px;
+}
+
+.description {
+  text-align: center;
+  margin: 20px 100px ;
+}
+
+.description h2 {
+  font-family: sans-serif; /* Change the font family */
+  color: #000; 
+  margin: 10px;
+  padding: 0;
+}
+
+.description p {
+  margin: 10px;
+  padding: 0;
+}
+
+
+/* Carousel styles */
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.carousel {
+  list-style-type: none;
+  width: 100%;
+  height: 600px;
+
+  position: relative;
+}
+
+.carousel-item {
+  height: 100%;
+  width: 100%;
+
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  transition: 300ms opacity ease-in-out;
+  transition-delay: 300ms;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #046A38;
+  position: absolute;
+  top: 50%;
+
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.carousel-btn.left {
+  left: -2.5rem;
+}
+
+.carousel-btn.right {
+  right: -2.5rem;
+}
+
+.carousel-btn:hover {
+  cursor: pointer;
+  background-color: #892924;
+  color: white;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.7rem;
+  gap: 0.5rem;
+  opacity: 0.3;
+}
+
+.nav-item {
+  height: 11px;
+  width: 11px;
+  background-color: black;
+  border-radius: 50%;
+
+  opacity: 0.3;
+
+  transition: 300ms opacity ease-in-out;
+}
+
+.nav-item.active {
+  opacity: 0.7;
+}
+/* End of Carousel styling */
+
+/* Events */
+.events-pic img {
+  max-width: 450px; /* Set the maximum width for the images */
+  height: auto;
+  margin: 10px; /* Add margin between the images */
+}
+
+/* Center the h2 */
+.events-container h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.upcoming
+{
+  background-origin: padding-box;
+  border: #fff;
+  padding: 20px;
+}
+/* Style the unordered list */
+.upcoming ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 200%;
+}
+
+.upcoming li {
+  margin: 10px 0; /* Add margin spacing between list items */
+  border: 1px solid #E35C36; /* Add a border with the header's color */
+  background-color: #EB856A;
+  padding: 5px 10px; /* Add padding for spacing inside the border */
+  color: black; /* Text color */
+  transition: background-color 0.3s; /* Hover effect on background color */
+  cursor: pointer;
+}
+
+.upcoming li:hover {
+  background-color: #892924; /* Background color on hover */
+  color: #FFF; /* Text color on hover */
+}
+
+.events-and-calendar
+{
+  padding: .5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Calendar */
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Verdana, sans-serif;
+  /* background-image: url('images/SASA_Site_Back.png');
+  background-size: cover; */
+}
+
+.calendar
+{
+  /* margin: 0 auto; */
+  width: 30%;
+  height: 30%;
+}
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #892924;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays*/
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #E35C36;
+  color: white !important
+}
+
+/* Membership */
+.forms
+{
+  padding: .5rem;
+  display: flex;
+  justify-content: space-evenly;
+  /* color: white; */
+}
+.qr-code
+{
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+/* Add border and spacing to forms */
+.container-content form, .payment form {
+  border: 2px solid #EB856A;
+  background-color: #f7e0d1c9;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Style form buttons */
+input[type="submit"] {
+  background-color: #EB856A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #9D3F06; /* Change color on hover */
+}
+.container-content form div{
+  margin-bottom: 15px;
+}
+
+input[type="radio"]
+{
+  margin-bottom: 15px;
+}
+
+.benefits p
+{
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
+}
+
+/* Modal in Membership */
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 450px;
+  padding: 1.3rem;
+  min-height: 250px;
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  background-color: #F7E0D1;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-left: 180px;
+  margin-top: 80px;
+}
+
+.modal-logo {
+  border-radius: 90px;
+}
+
+.modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.modal p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0.4rem 0 0.2rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  background-color: #E35C36;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-open {
+  position: absolute;
+  bottom: 150px;
+}
+
+.btn-close {
+  transform: translate(10px, -20px);
+  padding: 0.5rem 0.7rem;
+  background: #eee;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+/* End of Membership Page */
+
+/* About Page */
+.mission h2, .purpose h2
+{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mission p, .purpose p
+{
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.info
+{
+  padding: .5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.board h3
+{
+  margin-left: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.board ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Bright Retro Brown", sans-serif; /* Change the font */
+  border: 2px solid #E35C36; /* Add a border */
+}
+.board li 
+{
+  padding:10px;
+}
+
+.contact h3
+{
+  margin-left: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.contact form
+{
+  border: 1px solid #E35C36;
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 90px;
+}
+
+.contact form div
+{
+  margin-bottom: 15px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rushil Jadia" />
+    <title>Membership</title>
+    <link rel="icon" href="images/SASA-Logo.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="scripts/membership.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img
+        class="nav-branding"
+        src="images/SASA_23-24.png"
+        alt="SASA Logo of Elephant"
+        width="100"
+        height="100"
+      />
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-header">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-header">
+            <a href="events.html">Events</a>
+          </li>
+          <li class="nav-header">
+            <a href="membership.html">Membership</a>
+          </li>
+          <li class="nav-header">
+            <a href="about.html">About Us</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="benefits">
+        <h2>Membership Benefits</h2>
+        <p class="benefit-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          nesciunt distinctio eveniet porro possimus reiciendis quibusdam.
+          Repellendus dolores modi, ex amet fugit distinctio, aliquam
+          cupiditate, possimus quo rem molestias suscipit et eum doloribus
+          voluptates magnam odio. Assumenda commodi recusandae aliquid animi
+          beatae nemo eligendi ex. Adipisci id dicta dolorum dignissimos
+          possimus! Asperiores corporis culpa, quae consequatur, doloremque
+          maxime, unde debitis deleniti non quos architecto molestiae? Laborum
+          quas modi omnis quasi blanditiis, quos sint reprehenderit aut ipsam,
+          ullam iure nulla voluptatem placeat officiis magnam nihil autem? Eaque
+          dolorum delectus, laboriosam temporibus facere ratione autem
+          blanditiis soluta est culpa, neque quod dolor!
+        </p>
+      </div>
+      <div class="forms">
+        <div class="container-content">
+          <h3 class="center-text">Paid Membership Sign Up</h3>
+          <form action="#">
+            <div>
+              <label for="name">Full Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div>
+              <label for="students">Student Email:</label>
+              <input
+                type="text"
+                name="student-email"
+                id="email"
+                placeholder="student@charlotte.edu"
+                required
+              />
+            </div>
+            <div>
+              <label for="paid1">Have you paid your dues yet?</label><br />
+              <input type="radio" id="paid1" name="Paid" value="Yes" />
+              <label for="paid2">Yes</label><br />
+              <input type="radio" id="paid2" name="paid" value="No" />
+              <label for="paid3">No</label><br />
+            </div>
+            <input
+              type="submit"
+              id="submitId"
+              name="Enter"
+              value="Submit"
+              class="btn"
+            />
+            <div class="overlay hidden">
+              <!-- <button class="btn btn-open">Submit</button> -->
+            </div>
+          </form>
+          <!-- Modal Implementation -->
+          <section class="modal">
+            <div class="flex">
+              <img
+                src="images/SASA_23-24.png"
+                width="50"
+                height="50"
+                alt="SASA Logo"
+                class="modal-logo"
+              />
+              <button class="btn-close">x</button>
+            </div>
+            <div>
+              <h3>Stay in touch</h3>
+              <p>
+                Enter your UNCC email to join our newsletter, it will keep you
+                updated on all of the latest events hosted by SASA! Be sure to
+                attend one of our events!
+              </p>
+            </div>
+            <input
+              type="email"
+              id="modal-email"
+              placeholder="normniner@uncc.edu"
+            />
+            <button class="btn btn-modal">Submit</button>
+          </section>
+        </div>
+        <div class="payment" id="payment">
+          <h3>Payment Method</h3>
+          <form action="#">
+            <input type="radio" name="payment" id="venmo" required />
+            <label for="payments">Venmo</label><br />
+            <input type="radio" name="payment" id="cashapp" />
+            <label for="payments">Cashapp</label><br />
+            <input type="radio" name="payment" id="zelle" />
+            <label for="payments">Zelle</label><br />
+            <input type="radio" name="payment" id="cash" />
+            <label for="payments">Cash</label><br />
+            <input
+              type="submit"
+              name="submit2"
+              id="submitName2"
+              value="Submit"
+              class="btn"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="qr-code">
+        <h3>Scan this to Pay on Venmo!</h3>
+        <img
+          src="images/Venmo-QR_Code.png"
+          alt="QR Code to Scan SASA Venmo"
+          width="200"
+          height="225"
+        />
+      </div>
+    </main>
+    <footer>
+      <p class="font-sm center-text">
+        &copy;2023 South Asian Student Association. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
